@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <img id="img1" src="logo-inky-black.png" alt="image1">
+    onload="addMessage('img1 успешно загружен')"
+    onerror="addMesage('img1 не загружен')"
+    >
+    <img id="img2" src="logo-inky-black.png" alt="image2"
+     onload="addMessage('img2 успешно загружен')"
+    onerror="addMesage('img2 не загружен')"
+     >
+    <p id="log"></p>
+       <script>
+//   window.onerror
+//   window.onload
+           function addMessage(msg){
+               window.log.innerHTML += msg + "<br>";
+           }
+           img1.onload
+           window.addEventListener("load",function(){
+           })
+           window.addEventListener("error",function(){
+           })
+//        document.addEventListener("DOMContentLoaded", function(){alert"DOM загружен")})
+//    window.addEventListener("load",function(),{alert("Img загружен")})
+    </script>
+</body>
+</html>
+
+
+элемент.addEventListener("click", myFunction);
+
+function myFunction() {
+    alert ("Hello World!");
+} 

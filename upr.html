@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: aqua;
+            position: relative;
+            height: 100px;
+            width: 100px;
+            background-color: rgb(255,255,255);
+
+        }
+        body{
+            height: 3000px;
+            width: 1000px;
+            margin: 0;  <! //объект передвинется в место курсора>
+        }
+    </style>
+</head>
+<body onclick="moveStranger(event)">
+    <div id="stranger"></div>
+    <script>
+        let colorArr = ["red","green","blue","yellow","ocean"]
+        function moveStranger(even){
+            stranger.style.left = even.pageX+"px";
+            stranger.style.top = even.pageY+"px";
+   //         stranger.style.backgroundColor = colorArr[
+ //           Math.floor(Math.random()*colorArr.length)];          ]
+        
+        stranger.style.backgroundColor = "rgb("+Math.round(255*Math.random())+","+Math.round(255*Math.random())+","+Math.round(255*Math.random())+")";
+            
+         }
+        param.addEventListener("mousemove",)
+    </script>
+</body>
+</html>

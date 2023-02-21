@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: aqua;
+            position: relative;
+            height: 100px;
+            width: 100px;
+            background-color: rgb(255,255,255);
+            
+                
+        }
+        body{
+            height: 3000px;
+            width: 3000px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+   <body onmousemove="moveStranger(event)">
+    <div id="stranger"></div>
+    <p id="param"></p>
+       <script>
+        let colorArr = ["red","green","blue","yellow","ocean"]
+        function moveStranger(even){
+            stranger.style.left = even.pageX+"px";
+            stranger.style.top = even.pageY+"px";
+//            stranger.style.backgroundColor = colorArr[ Math.floor(Math.random()*colorArr.length)];
+//            sttanger.style.backgroundColor = rgb(123,155,234)
+            stranger.style.backgroundColor = "rgb("+Math.round(255*Math.random())+","
+                   +Math.round(255*Math.random())+","
+                    +Math.round(255*Math.random())+")";
+            
+        }
+        param.addEventListener("mousemove",)
+//        auxclick щелчек на колесо
+//        dblclick даблклик
+//        mousedown зажата кнопка мыши
+//        mouseenter курсор зашел в пределы элемента
+//        mouseleave курсор вышел за пределы элемента
+//        mouseout
+//        mouseup отпущена кнопка мыши
+//        whell повернули колесо
+//        keydown нажата кнопка клавы
+//        keyup отпущена кнопка клавиатуры
+        
+        
+        
+        
+    </script>
+</body>
+</html>

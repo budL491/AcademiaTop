@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    div{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+        }
+</style>
+</head>
+<body id="click1">
+    <div></div>
+<!--      // <div  id="click1"></div>-->
+    <p id = "output"></p>
+    <script>
+//    click1.onclick = function(){
+//        alert("Клик по объелту");
+//    }
+     click1.addEventListener("click", function(){
+       output.innerText = "Вы кликнули на " + event.target.nodeName;
+         console.log(event);
+     })
+//         alert("Клик по объекту");
+        //Event
+        
+    </script>
+</body>
+</html>

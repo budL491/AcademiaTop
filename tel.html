@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        form li + li{
+            margin-top: 0.5em
+        }
+        form{
+            width: 400px;
+            padding: 1em;
+            border: 2px solid rgba(0, 0, 255, 0.34);
+            border-radius: 3em;    
+        }
+        input, textarea{
+            width: 300px;
+            border: 1px solid #888;
+            font: sans-serif;
+            vertical-align: top;
+            
+        }
+        input:focus, textarea:focus{
+            border-color: chartreuse;
+            
+        }
+        input[id="send"]{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+                
+        }
+        label{
+            width: 75px;
+            text-align: right;
+            display: inline-block;
+            margin-right: 0.5em
+        }
+    </style>
+</head>
+<body>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <hr>
+    <form action="/">
+        <ul>
+            <li>
+                <label for="nick">Nick:</label>
+                <input type="text" id="nick" name="userNick" placeholder="Your Nick">
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="userEmail">
+            </li>
+            <li>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="userPhone" >               
+            </li>
+            <li>
+                <label for="message">Message:</label>
+                <textarea name="userMessage" id="message"></textarea>
+            </li>
+            <li>
+                <input type="submit" id="send" value="Send my message">
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
